@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 28 16% 6%;
+    --foreground: 38 29% 87%;
+    --card: 30 11% 9%;
+    --card-foreground: 38 29% 87%;
+    --popover: 30 11% 9%;
+    --popover-foreground: 38 29% 87%;
+    --primary: 43 54% 54%;
+    --primary-foreground: 28 16% 6%;
+    --secondary: 27 20% 14%;
+    --secondary-foreground: 38 29% 87%;
+    --muted: 30 14% 11%;
+    --muted-foreground: 36 12% 52%;
+    --accent: 39 62% 41%;
+    --accent-foreground: 38 29% 87%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 10% 17%;
+    --input: 30 10% 17%;
+    --ring: 43 54% 54%;
+    --chart-1: 43 54% 54%;
+    --chart-2: 39 62% 41%;
+    --chart-3: 27 20% 30%;
+    --chart-4: 38 29% 60%;
+    --chart-5: 43 54% 44%;
+    --radius: 0.25rem;
+    --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menos, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 28 16% 6%;
+    --sidebar-foreground: 38 29% 87%;
+    --sidebar-primary: 43 54% 54%;
+    --sidebar-primary-foreground: 28 16% 6%;
+    --sidebar-accent: 27 20% 14%;
+    --sidebar-accent-foreground: 38 29% 87%;
+    --sidebar-border: 30 10% 17%;
+    --sidebar-ring: 43 54% 54%;
+  }
+
+  .dark {
+    --background: 28 16% 6%;
+    --foreground: 38 29% 87%;
+    --card: 30 11% 9%;
+    --card-foreground: 38 29% 87%;
+    --popover: 30 11% 9%;
+    --popover-foreground: 38 29% 87%;
+    --primary: 43 54% 54%;
+    --primary-foreground: 28 16% 6%;
+    --secondary: 27 20% 14%;
+    --secondary-foreground: 38 29% 87%;
+    --muted: 30 14% 11%;
+    --muted-foreground: 36 12% 52%;
+    --accent: 39 62% 41%;
+    --accent-foreground: 38 29% 87%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 10% 17%;
+    --input: 30 10% 17%;
+    --ring: 43 54% 54%;
+    --chart-1: 43 54% 54%;
+    --chart-2: 39 62% 41%;
+    --chart-3: 27 20% 30%;
+    --chart-4: 38 29% 60%;
+    --chart-5: 43 54% 44%;
+    --sidebar-background: 28 16% 6%;
+    --sidebar-foreground: 38 29% 87%;
+    --sidebar-primary: 43 54% 54%;
+    --sidebar-primary-foreground: 28 16% 6%;
+    --sidebar-accent: 27 20% 14%;
+    --sidebar-accent-foreground: 38 29% 87%;
+    --sidebar-border: 30 10% 17%;
+    --sidebar-ring: 43 54% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-dark {
+    scrollbar-color: hsl(var(--primary) / 0.55) hsl(var(--secondary));
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-dark::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-dark::-webkit-scrollbar-track {
+    background: hsl(var(--secondary));
+    border-radius: 999px;
+  }
+
+  .scrollbar-dark::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.55);
+    border: 2px solid hsl(var(--secondary));
+    border-radius: 999px;
+  }
+
+  .scrollbar-dark::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+}
