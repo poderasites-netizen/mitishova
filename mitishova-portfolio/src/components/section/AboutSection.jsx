@@ -68,9 +68,7 @@ export default function AboutSection() {
   <div className="max-w-2xl">
     {/* Главното изречение */}
     <p className="font-display text-2xl md:text-[2.15rem] font-light leading-[1.45] text-foreground/90 tracking-wide">
-      Аз технически мога да направя перфектни вежди
-      <br className="hidden md:block" />
-      и въпреки това жената срещу мен да не се чувства комфортно с тях.
+      Аз технически мога да направя перфектни вежди и въпреки това жената срещу мен да не се чувства комфортно с тях.
     </p>
 
     <p className="mt-5 font-display text-xl md:text-2xl font-light text-foreground/45 italic">
@@ -83,7 +81,7 @@ export default function AboutSection() {
     {/* Основен текст */}
     <div className="space-y-6">
       <p className="font-body text-base md:text-lg font-light leading-[1.85] text-foreground/55">
-        Работейки с вежди от осем години, с времето започнах да гледам на тази професия по различен начин.
+        След осем години работа с вежди започнах да гледам на тази професия по различен начин.
         Не ме интересува само дали формата е категорично правилна, цветът е идеален и техниката е изпълнена както трябва.
         Това си е задължително.
       </p>

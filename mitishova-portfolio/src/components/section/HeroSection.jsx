@@ -50,7 +50,7 @@ export default function HeroSection() {
               transition={{ duration: 1, delay: 0.6 }}
               className="font-display text-6xl md:text-7xl lg:text-[4.5rem] font-light leading-[1.05] text-foreground mb-8 max-sm:text-[3.1rem] max-sm:leading-[0.95] max-sm:mb-6"
             >
-              КРАСОТА НЯМА
+              КРАСОТАТА НЯМА
               <br />
               ШАБЛОН
             </motion.h1>
