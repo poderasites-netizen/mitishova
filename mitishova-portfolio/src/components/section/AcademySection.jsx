@@ -165,17 +165,18 @@ export default function AcademySection() {
                   </button>
                 </DialogTrigger>
 
-                <DialogContent className="max-w-5xl max-h-[92vh] overflow-y-scroll scrollbar-dark rounded-2xl border-primary/20 bg-background p-8 shadow-[0_24px_80px_rgba(0,0,0,0.55)] md:p-14">
-                  <DialogHeader className="mb-10 text-left">
-                    <DialogTitle className="font-display text-3xl md:text-4xl font-light text-foreground">
-                      Подробности за обучението
-                    </DialogTitle>
-                    <DialogDescription className="font-body text-sm leading-relaxed text-foreground/50 mt-3">
-                      Практическа програма с фокус върху мисленето, анализа и уверената работа с клиент.
-                    </DialogDescription>
-                  </DialogHeader>
+                <DialogContent className="flex max-w-5xl max-h-[92vh] overflow-hidden scrollbar-dark rounded-2xl border-primary/20 bg-background p-8 shadow-[0_24px_80px_rgba(0,0,0,0.55)] md:p-14">
+                  <div className="min-h-0 flex-1 overflow-y-auto scrollbar-dark pr-2 md:pr-4">
+                    <DialogHeader className="mb-10 text-left">
+                      <DialogTitle className="font-display text-3xl md:text-4xl font-light text-foreground">
+                        Подробности за обучението
+                      </DialogTitle>
+                      <DialogDescription className="font-body text-sm leading-relaxed text-foreground/50 mt-3">
+                        Практическа програма с фокус върху мисленето, анализа и уверената работа с клиент.
+                      </DialogDescription>
+                    </DialogHeader>
 
-                  <div className="space-y-14">
+                    <div className="space-y-14">
                     {/* Format */}
                     <section>
                       <h3 className="font-display text-xl md:text-2xl font-light text-primary/90 mb-6 pb-3 border-b border-border/30">
@@ -267,6 +268,7 @@ export default function AcademySection() {
                         </article>
                       </div>
                     </section>
+                    </div>
                   </div>
                 </DialogContent>
               </Dialog>
