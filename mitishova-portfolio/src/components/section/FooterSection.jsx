@@ -67,6 +67,17 @@ export default function FooterSection() {
             © {new Date().getFullYear()} Mitishova Brows. Всички права запазени.
           </p>
           <p className="font-body text-xs text-foreground/30 tracking-wider">
+            Изработка на сайта:{" "}
+            <a
+              href="https://culsoft.bg/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors"
+            >
+              CulSoft
+            </a>
+          </p>
+          <p className="font-body text-xs text-foreground/30 tracking-wider">
             Варна, България
           </p>
         </div>
